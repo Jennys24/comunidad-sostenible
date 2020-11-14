@@ -13,24 +13,28 @@
 		nav img {
 			width: 95px;
 		}
-
+		.foto-semilla {
+			background-image: url(img/semilla.jpg);
+			background-size:cover;
+			background-position: center;
+			height: 450px;
+			width: 100%;
+		}
 		.con-fondo {
 			background-image: url("img/fondo.jpg");
 			background-position: center;
 			background-size: cover;
 		}
-
 		li {
 			font-family: times new roman;
 			color: grey;
+			font-weight: bold
 		}
-
 		.fondo-proyect {
 			background-color: olivedrab;
 			width: auto;
-			height: 850px;
+			min-height: 850px;
 		}
-
 		img1,
 		img2 {
 			width: 400px;
@@ -43,53 +47,77 @@
 			background-size: cover;
 			display:block;
 			width: 100%;
-			height: 500px;
+			min-height: 500px;
+		}
+		.blog-carrusel {
+			background-image: url("img/fondo2.jpg");
+		}
+		.redes {
+			height: 250px;
+			font-family: Time New Roman;
+			font-size: 27px;
+			font-weight: bold
+		}
+		.ecocomunidad {
+			font-weight: bold
+		}
+		.proyecto {
+			font-family: Time New Roman;
+		}
+		.proyecto span {
+			color: darkgoldenrod;
 		}
 	</style>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-sm navbar-light bg-white text-center bold offset-1 ">
-		<a class="navbar-brand pr-5" href="#"><img src="img\ecomunidad-logo.png"></a>
-		<div class="collapse navbar-collapse offset-2" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto text-center text-secondary">
-				<li class="nav-item px-3">
-					<a class="nav-link" href="#">Nosotros<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="p-2 col-">
-					|
-				</li>
-				<li class="nav-item px-3">
-					<a class="nav-link" href="#">Servicios<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="p-2">
-					|
-				</li>
-				<li class="nav-item px-3">
-					<a class="nav-link" href="#">Proyectos<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="p-2">
-					|
-				</li>
-				<li class="nav-item px-3">
-					<a class="nav-link" href="#">Equipos<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="p-2">
-					|
-				</li>
-				<li class="nav-item px-3">
-					<a class="nav-link" href="#">Blogs<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="p-2">
-					|
-				</li>
-				<li class="nav-item px-3">
-					<a class="nav-link" href="#">Síguenos<span class="sr-only">(current)</span></a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<img src="img\semilla.jpg" style="background-size:cover; width: 100%; height: auto;" alt="">
+	<div><!--inicio navbar-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white text-center bold offset-1 ">
+			<a class="navbar-brand pr-5" href="#"><img src="img\ecomunidad-logo.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto text-center text-secondary">
+					<li class="nav-item px-3">
+						<a class="nav-link" href="#">Nosotros<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="p-2 col-">
+						|
+					</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">Servicios<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="p-2">
+						|
+					</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">Proyectos<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="p-2">
+						|
+					</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">Equipos<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="p-2">
+						|
+					</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">Blogs<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="p-2">
+						|
+					</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">Síguenos<span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div><!--final nabvar-->
+
+	<div class="foto-semilla"></div>
 
 	<div class="jumbotron"><!--inicio jumbotron-->
 		<p class="row text-center mx-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -98,9 +126,10 @@
 			consequat.
 			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 	</div><!--jumbotron-->
+
 	<div class="container"><!--inicio primer container-->
 		<div class="row mt-5"><!--inicio misión y visión-->
-			<div class="col-6 text-center">
+			<div class="col-6 col-lg-6 col-sm-12 text-center">
 				<img src="img\iconos\mision\mision.png" alt="Responsive image">
 				<h5 class="mx-3 mt-2">Misión</h5>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -108,7 +137,7 @@
 					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.</p>
 			</div>
-			<div class="col-6 text-center">
+			<div class="col-6 col-lg-6 col-sm-12 text-center">
 				<img src="img\iconos\mision\vision.png" alt="Responsive image">
 				<h5 class="mx-3 mt-2">Visión</h5>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -119,10 +148,10 @@
 	</div><!-- fin primer container-->
 
 	<div class="row p-4"><!--inicio img compartidas-->
-		<div class="col-6 m-0 p-0">
+		<div class="col-6 col-lg-6 col-sm-12 m-0 p-0">
 			<img src="img\metodo.JPG" style="width: 100%; height: auto;" alt="">
 		</div>
-		<div class="col-6 m-0 p-0 text-center con-fondo text-white p-4">
+		<div class="col-6 col-lg-6 col-sm-12 m-0 p-0 text-center con-fondo text-white p-4">
 			<img class="p-4" src="img\iconos\metodologia-icon.png">
 			<h5 class="p-2">Metodología</h5>
 			<p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui pariatur eius accusamus officiis
@@ -140,42 +169,42 @@
 				consequat.</p>
 		</div><!--final servicios-->
 		<div class="row"><!--inicio img 1/6-->
-			<div class="col-4 text-center">
+			<div class="col-4 col-lg-4 col-md-6 col-sm-12 text-center">
 				<img src="img\iconos\servicios-icon\educacion.png" alt="Responsive image">
 				<h6 class="mx-5 mt-2 text-success">Educación para<br>el Desarrollo Sostenible</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					magna
 					aliqua.</p>
 			</div>
-			<div class="col-4 text-center">
+			<div class="col-4 col-lg-4 col-md-6 col-sm-12 text-center">
 				<img src="img\iconos\servicios-icon\mitigacion.png" alt="Responsive image">
 				<h6 class="mx-5 mt-2 text-success">Mitigación<br>Cambio Climático</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					magna
 					aliqua.</p>
 			</div>
-			<div class="col-4 text-center">
+			<div class="col-4 col-lg-4 col-md-6 col-sm-12 text-center">
 				<img src="img\iconos\servicios-icon\bienestar.png" alt="Responsive image">
 				<h6 class="mx-5 mt-2 text-success">Bienestar<br>Ocupacional</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					magna
 					aliqua.</p>
 			</div>
-			<div class="col-4 text-center">
+			<div class="col-4 col-lg-4 col-md-6 col-sm-12 text-center">
 				<img src="img\iconos\servicios-icon\seguridad-icon.png" alt="Responsive image">
 				<h6 class="mx-5 mt-2 text-success">Consultoría en Seguridad<br>Industrial y Medio Ambiente</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					magna
 					aliqua.</p>
 			</div>
-			<div class="col-4 text-center">
+			<div class="col-4 col-lg-4 col-md-6 col-sm-12 text-center">
 				<img src="img\iconos\servicios-icon\manejo-de-agua.png" alt="Responsive image">
 				<h6 class="mx-5 mt-2 text-success">Manejo de<br>Aguas</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					magna
 					aliqua.</p>
 			</div>
-			<div class="col-4 text-center">
+			<div class="col-4 col-lg-4 col-md-6 col-sm-12 text-center">
 				<img src="img\iconos\servicios-icon\agricultura-icon.png" alt="Responsive image">
 				<h6 class="mx-5 mt-2 text-success">Agricultura</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -189,16 +218,16 @@
 		<div class="container fondo-proyect">
 			<div class="row text-white">
 				<h5 class="col-12 text-center p-5">Proyectos</h5>
-				<div class="col-6 mb-5 m-0"><img src="img\fotos\img-0352.JPG" style="width:450px;" alt=""></div>
-				<div class="col-6 m-0 p-0">
+				<div class="col-6 col-lg-6 col-sm-12 mb-5 m-0"><img src="img\fotos\img-0352.JPG" style="width:450px;" alt=""></div>
+				<div class="col-6 col-lg-6 col-sm-12 m-0 p-0">
 					<h5>Nombre del Proyecto 1</h5>
 					<h6>Nombre del Distrito</h6>
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas harum fugit autem commodi obcaecati ipsa
 						ullam molestiae tempore culpa dolore ipsam magnam soluta dolorum, facere sequi architecto minima laboriosam
 						veritatis!</p>
 				</div>
-				<div class="col-6 mb-5 m-0"><img src="img\fotos\img-9246.jpg" style="width:450px;" alt=""></div>
-				<div class="col-6 m-0 p-0">
+				<div class="col-6 col-lg-6 col-sm-12 mb-5 m-0"><img src="img\fotos\img-9246.jpg" style="width:450px;" alt=""></div>
+				<div class="col-6 col-lg-6 col-sm-12 m-0 p-0">
 					<h5>Nombre del Proyecto 2</h5>
 					<h6>Nombre del Distrito</h6>
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas harum fugit autem commodi obcaecati ipsa
@@ -214,7 +243,7 @@
 			<div class="col-12">
 				<h5 class="col 12 text-center py-5">Equipo</h5>
 			</div>
-			<div class="col-6 text-center">
+			<div class="col-6 col-lg-6 col-sm-12 text-center">
 				<img src="img\fotos\equipo2.jpg" class="rounded-circle" alt="responsive image">
 				<h5 class="pt-3">Camila Basurco</h5>
 				<h6>Cargo desempeñado</h6>
@@ -223,17 +252,17 @@
 					aliqua.</p>
 				<ul class="navbar-nav mr-auto d-inline">
 					<li class="nav-item active d-inline">
-						<img src="img\iconos\redes-sociales\twitter.png" style="width: 40px; height: 40px; " alt="">
+						<button type="button" class="btn btn-link"><img src="img\iconos\redes-sociales\twitter.png" style="width: 40px; height: 40px;" alt=""></button>
 					</li>
 					<li class="nav-item active d-inline">
-						<img src="img\iconos\redes-sociales\in.png" style="width: 40px; height: 40px; " alt="">
+						<button type="button" class="btn btn-link"><img src="img\iconos\redes-sociales\in.png" style="width: 40px; height: 40px; " alt=""></button>
 					</li>
 					<li class="nav-item active d-inline">
-						<img src="img\iconos\redes-sociales\mensaje.png" style="width: 40px; height: 40px; " alt="">
+						<button type="button" class="btn btn-link"><img src="img\iconos\redes-sociales\mensaje.png" style="width: 40px; height: 40px; " alt=""></button>
 					</li>
 				</ul>
 			</div>
-			<div class="col-6 text-center">
+			<div class="col-6 col-lg-6 col-sm-12 text-center">
 				<img src="img\fotos\equipo3.jpg" class="rounded-circle" alt="responsive image">
 				<h5 class="pt-3">Gabriela Bertocci</h5>
 				<h6>Cargo desempeñado</h6>
@@ -242,75 +271,75 @@
 					aliqua.</p>
 				<ul class="navbar-nav mr-auto d-inline">
 					<li class="nav-item active d-inline">
-						<img src="img\iconos\redes-sociales\twitter.png" style="width: 40px; height: 40px; " alt="">
+						<button type="button" class="btn btn-link"><img src="img\iconos\redes-sociales\twitter.png" style="width: 40px; height: 40px; " alt=""></button>
 					</li>
 					<li class="nav-item active d-inline">
-						<img src="img\iconos\redes-sociales\in.png" style="width: 40px; height: 40px; " alt="">
+						<button type="button" class="btn btn-link"><img src="img\iconos\redes-sociales\in.png" style="width: 40px; height: 40px; " alt=""></button>
 					</li>
 					<li class="nav-item active d-inline">
-						<img src="img\iconos\redes-sociales\mensaje.png" style="width: 40px; height: 40px; " alt="">
+						<button type="button" class="btn btn-link"><img src="img\iconos\redes-sociales\mensaje.png" style="width: 40px; height: 40px; " alt=""></button>
 					</li>
 				</ul>
 			</div>
 		</div><!--final equipo-->
 	</div><!--final tercer container-->
 
-	<div class="row mt-5 p-0 bg-dark blog-carrusel"><!--inicio carousel-->
-		<div class="col-12 text-center text-white p-5"><h5>Blog</h5></div>
+	<div class="row mt-5 p-0 blog-carrusel"><!--inicio carousel-->
+		<div class="col-12 text-center text-black p-5"><h5>Blog</h5></div>
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<div class="card-deck pt-0 m-5">
-					<div class="card">
-						<img src="img\fotos\IMG_0334.JPG" class="card-img-top" alt="...">
+				<div class="card-deck pt-0 mt-0 mx-5 mb-5">
+					<div class="card col-sm-12">
+						<img src="img\fotos\IMG_0334.JPG" class="card-img-top" width="100px" height="250px" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">Titulo del Post 1</h5>
 							<h6>01.Ene.2015</h6>
 							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						</div>
 					</div>
-					<div class="card">
-						<img src="img\fotos\img-0352.JPG" class="card-img-top" alt="...">
+					<div class="card col-sm-12">
+						<img src="img\fotos\img-0352.JPG" class="card-img-top" width="100px" height="250px" alt="...">
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
+							<h5 class="card-title">Titulo del Post 2</h5>
+							<h6>31.Dic.2014</h6>
 							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 						</div>
 					</div>
-					<div class="card">
-						<img src="img\fotos\img-0352.JPG" class="card-img-top" alt="...">
+					<div class="card col-sm-12">
+						<img src="img\fotos\img-0352.JPG" class="card-img-top" width="100px" height="250px" alt="...">
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
+							<h5 class="card-title">Titulo del Post 3</h5>
+							<h6>30.Dic.2014</h6>
 							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<div class="card-deck pt-0 m-5">
-					<div class="card">
-						<img src="img\fotos\img-0400.JPG" class="card-img-top" alt="...">
+				<div class="card-deck pt-0 mt-0 mx-5 mb-5">
+					<div class="card col-sm-12">
+						<img src="img\fotos\img-0400.JPG" class="card-img-top" width="100px" height="250px" alt="...">
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
+							<h5 class="card-title">Titulo del Post 4</h5>
+							<h6>30.Dic.2014</h6>
 							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 						</div>
 					</div>
-					<div class="card">
-						<img src="img\fotos\img-0352.JPG" class="card-img-top" alt="...">
+					<div class="card col-sm-12">
+						<img src="img\fotos\img-0352.JPG" class="card-img-top" width="100px" height="250px" alt="...">
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
+							<h5 class="card-title">Titulo del Post 5</h5>
+							<h6>30.Dic.2014</h6>
 							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 						</div>
 					</div>
-					<div class="card">
-						<img src="img\fotos\IMG_0334.JPG" class="card-img-top" alt="...">
+					<div class="card col-sm-12">
+						<img src="img\fotos\IMG_0334.JPG" class="card-img-top" width="100px" height="250px" alt="...">
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
+							<h5 class="card-title">Titulo del Post 6</h5>
+							<h6>30.Dic.2014</h6>
 							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 						</div>
 					</div>
 				</div>
@@ -327,15 +356,29 @@
 		</div>
 	</div><!--final carousel-->
 
-
-	<div class="row-12 bg-dark m-0 p-0" style="width: auto; height: 300px;"><!--redes-->
+	<div class="row p-5 bg-dark" style="min-height: 350px;"><!--redes-->
+		<div class="col-3 col-sm-12 redes border border-light text-light pt-2 pl-5">
+			<p>Facebook<img src="img\facebook.png" class="rounded float-right" width="60px" alt=""></p>
+		</div>
+		<div class="col-3 col-sm-12 redes border border-light text-light pt-2 pl-5">
+			<p>Twitter<img src="img\twitter.png" class="rounded float-right" width="60px" alt=""></p>
+		</div>
+		<div class="col-3 col-sm-12 redes border border-light text-light pt-2 pl-5">
+			<p>LinkedIn<img src="img\in.png" class="rounded float-right" width="60px" alt=""></p>
+		</div>
+		<div class="col-3 col-sm-12 redes border border-light text-light pt-2 pl-5">
+			<p>E-mail<img src="img\email.png" class="rounded float-right" width="55px" alt=""></p>
+		</div>>
 	</div><!--final redes-->
 
-	<div class="row"><!--footer-->
-		<div class="col bg-light p-3 m-5"></div>
+	<div class="row bg-light p-3 m-0" style="height: 100px;"><!--footer-->
+		<div class="col-6 pt-2 pl-5 proyecto">
+			<p>Proyecto desarrollado por<br><span>Laboratoria.com</span></p>
+		</div>
+		<div class="col-6 pt-2 pl-5 text-right ecocomunidad">
+			<p>Ecocomunidad Sostenible<br>hola@ecomunidad.com.cl<br>56 94896 5789</p>
+		</div>
 	</div><!--footer-->
-
-
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
